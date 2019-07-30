@@ -62,37 +62,17 @@ html(lang=lang)
         section.o-sectionCategories
             .container
                 h1.o-sectionCategories__title Populární kategorie
-                .o-sectionCategories__carousel.m-productCarousel(id="product_swiper")
-                    .m-productCarousel__content
-                        .swiper-wrapper.m-productCarousel__wrap
+                .row    
+                    - for (var i=0; i<3; i++)
+                        .col-12.col-md-4
+                            a.o-sectionCategories__single.m-categoryCell(href="#")
+                                img.m-categoryCell__img(src=URLbase+"img/product-thumb-medium.jpg" alt="#" title="#")
+                                h3.m-categoryCell__title Dětské postýlky
+                                p.m-categoryCell__text Kovová konstrukce na dětskou dřevěnou postýlku slouží jako držák na nebesa.Kovová konstrukce jde připevnit ke každému typu dětské postýlky 
+                                span.btn.-ghost Zobrazit nabídku
 
-                            .swiper-slide.m-productCarousel__slide
-                                a.o-sectionCategories__single.m-categoryCell(href="#")
-                                    img.m-categoryCell__img(src=URLbase+"img/product-thumb-medium.jpg" alt="#" title="#")
-                                    p.m-categoryCell__title Postele
-                            .swiper-slide.m-productCarousel__slide
-                                a.o-sectionCategories__single.m-categoryCell(href="#")
-                                    img.m-categoryCell__img(src=URLbase+"img/product-thumb-medium.jpg" alt="#" title="#")
-                                    p.m-categoryCell__title Postele
-                            .swiper-slide.m-productCarousel__slide
-                                a.o-sectionCategories__single.m-categoryCell(href="#")
-                                    img.m-categoryCell__img(src=URLbase+"img/product-thumb-medium.jpg" alt="#" title="#")
-                                    p.m-categoryCell__title Postele
-                            .swiper-slide.m-productCarousel__slide
-                                a.o-sectionCategories__single.m-categoryCell(href="#")
-                                    img.m-categoryCell__img(src=URLbase+"img/product-thumb-medium.jpg" alt="#" title="#")
-                                    p.m-categoryCell__title Postele
-                            .swiper-slide.m-productCarousel__slide
-                                a.o-sectionCategories__single.m-categoryCell(href="#")
-                                    img.m-categoryCell__img(src=URLbase+"img/product-thumb-medium.jpg" alt="#" title="#")
-                                    p.m-categoryCell__title Postele
-                            .swiper-slide.m-productCarousel__slide
-                                a.o-sectionCategories__single.m-categoryCell(href="#")
-                                    img.m-categoryCell__img(src=URLbase+"img/product-thumb-medium.jpg" alt="#" title="#")
-                                    p.m-categoryCell__title Postele
 
-                    .swiper-button-prev.m-productCarousel__swiperButton.-prev
-                    .swiper-button-next.m-productCarousel__swiperButton.-next
+
 
 
         section.o-sectionSale
