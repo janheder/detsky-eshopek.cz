@@ -161,7 +161,9 @@
 
 
 .o-footer__logoLink{
-
+    position: relative;
+    display: flex;
+    margin-top: 50px;
 }
 .o-footer__logo{
     height: 68px;

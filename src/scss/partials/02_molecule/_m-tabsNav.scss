@@ -14,20 +14,11 @@
     position: relative;
     z-index: 1;
 
-    &::after{
-        content: "";
-        height: 1px;
-        width: 100%;
-        background: $bg-grey;
-        left: 0;
-        bottom: 0;
-        position: absolute;
-        z-index: -1;
-    }
 }
 .m-tabsNav__link{
     background: transparent;
     border: 0;
+    font-weight: 600;
     min-height: 5.4rem;
     padding: 0 2.5rem;
     display: flex;
@@ -47,7 +38,8 @@
 .m-tabsNav__link.active{
     background: transparent;
     color: $text-brand;
-    border-bottom: 1px solid $border-brand;
+    border: 1px dashed $border-grey;
+    border-radius: $border-radius-primary;
 }
 
 
