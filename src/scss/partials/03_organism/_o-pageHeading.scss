@@ -5,6 +5,10 @@
 
     &.-news{
         padding-bottom: 0;
+
+        .o-pageHeading__text{
+            margin-bottom: 4rem;
+        }
     }
 }
 .o-pageHeading__container{
@@ -23,6 +27,9 @@
         background: $bg-brand;
         padding: 10px 20px;
     }
+    &::after{
+        content: none;
+    }
 }
 .o-pageHeading__text{
     @include f-16-dark-regular;
@@ -32,24 +39,24 @@
 }
 .o-pageHeading__thumb{
     position: relative;
-    padding: 0 10px;
+    padding-top: 10px;
 
     &::after{
         content: "";
         width: 100%;
         position: absolute;
         background: $bg-white;
-        height: 50%;
+        height: 100%;
         bottom: 0;
         left: 0;
         z-index: 1;
     }
 }
 .o-pageHeading__thumbWrap{
-    height: 600px;
+    height: 400px;
     max-width: 780px;
     margin: 0 auto;
-    margin-top: 4rem;
+    margin-top: 3rem;
     z-index: 2;
 }
 

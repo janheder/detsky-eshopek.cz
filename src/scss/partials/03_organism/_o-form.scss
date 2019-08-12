@@ -153,16 +153,18 @@ input{
             }
             &:checked + .m-formGroup__radiobutton::before{
                 border-color: $bg-brand;
+
             }
             &:checked + .m-formGroup__checkbox::before{
                 background: $bg-brand;
+                opacity: 1;
                 border: 0;
             }
             &:checked + .m-formGroup__switch::before{
                 background: $bg-brand;
             }
             &:checked + .m-formGroup__switch::after{
-                right: 0;
+                right: 1px;
                 left: 100%;
                 transform: translateX(-100%);
                 background: $bg-brand;
