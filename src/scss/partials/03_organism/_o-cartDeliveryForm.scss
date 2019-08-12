@@ -15,6 +15,11 @@
     margin: 0;
     margin-bottom: -20px;
 }
+@media screen and (max-width: 991px){
+    .o-cartDeliveryForm{
+        padding-right: 0rem;
+    }
+}
 @media screen and (max-width: 768px){
     .o-cartDeliveryForm__title{
         text-align: center;

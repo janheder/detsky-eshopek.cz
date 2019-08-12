@@ -91,18 +91,21 @@
 .m-heroCarousel__caption{
     position: absolute;
     top: 50%;
-    transform: translateY(-50%);
-    left: 0;
+    transform: translate(-50%, -50%);
+    left: 50%;
     right: 0;
     padding: 20px;
-    text-align: center;
+    text-align: left;
     z-index: 5;
+    width: 1180px;
+    max-width: 100%;
 }
 .m-heroCarousel__title{
-    @include f-48-white-semibold;
-    margin: 0 auto;
+    @include f-48-primary-semibold;
+    font-weight: 700;
     margin-bottom: 4rem;
-    max-width: 720px;
+    max-width: 560px;
+
 }
 .m-heroCarousel__description{
     @include f-18-white-regular;

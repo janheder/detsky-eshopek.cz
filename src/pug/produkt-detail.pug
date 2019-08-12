@@ -65,16 +65,8 @@ html(lang=lang)
                     .col-12.col-lg-5.o-productDetail__col
                         .o-productDetail__main.m-productDetailMain
 
-                            h1.m-productDetailMain__title Postel Angelika 160/200 cm masiv borovice
+                            h1.m-productDetailMain__title #{ProductName}
 
-                            .m-productDetailMain__misc
-                                .m-productDetailMain__social.m-socialShare
-                                    .m-socialShare__title Sdílet:
-                                    a.m-socialShare__link(href="https://www.facebook.com/share.php?u=[URL]&title=[TITLE]" target="_blank") #[span.a-icon.-facebook.m-socialShare__icon]
-                                    a.m-socialShare__link(href="http://twitter.com/home?status=[TITLE]+[URL]" target="_blank") #[span.a-icon.-twitter.m-socialShare__icon]
-
-                            .m-productDetailMain__tags
-                                span.m-productDetailMain__tagSingle Výrobce: Visby
 
 
                             .m-productDetailMain__description
@@ -82,9 +74,15 @@ html(lang=lang)
                                 p.m-productDetailMain__descriptionText Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. #[a(href="#anchor-product-detail-description") Celý popis produktu]
                             
 
-                            .m-productDetailMain__stock 
-                                span.a-icon.-box.-green.m-productDetailMain__stockIcon
-                                span.m-productDetailMain__stockText Dostupné skladem
+                            .m-productDetailMain__misc
+                                .m-productDetailMain__stock 
+                                    span.a-icon.-box.-green.m-productDetailMain__stockIcon
+                                    span.m-productDetailMain__stockText Dostupné skladem
+
+
+                                .m-productDetailMain__tags
+                                    span.m-productDetailMain__tagSingle Výrobce: Visby
+
 
                             form.m-productDetailMain__form(method="post" name="product_detail_form" id="product_detail_form")
 

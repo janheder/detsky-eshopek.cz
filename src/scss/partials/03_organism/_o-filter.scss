@@ -2,6 +2,7 @@
     background: $bg-white;
     position: relative;
     padding: 0;
+    margin-top: 20px;
 }
 .o-filter__responsive{
     display: none;
@@ -35,11 +36,12 @@
     display: flex;
     flex-direction: row;
     position: relative;
+    background: $bg-light;
 
     &::after{
         content: "";
         background: $border-grey;
-        height: 1px;
+        height: 0px;
         width: 100%;
         bottom: 0;
         left: 0;

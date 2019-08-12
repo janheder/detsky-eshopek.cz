@@ -17,6 +17,7 @@
     align-items: center;
     justify-content: center;
     z-index: 1;
+    
 }
 .o-cartNav__title{
     @include f-16-primary-regular;
@@ -26,15 +27,18 @@
 .o-cartNav__number{
     @include f-16-primary-regular;
     border-radius: 50%;
-    height: 36px;
-    width: 36px;
+    height: 40px;
+    width: 40px;
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: center;
-    background: $bg-primary;
+    /*background: $bg-primary;*/
     color: $text-white;
     z-index: 2;
+    background-image: url("../img/cart-point.svg");
+    background-position: center center;
+    background-repeat: no-repeat;
 }
 
 .o-cartNav__single.-active{
@@ -43,16 +47,18 @@
     }
     .o-cartNav__number{
         color: $text-white;
-        background: $bg-brand;
+        /*background: $bg-brand;*/
+        background-image: url("../img/cart-point-active.svg");
     }
 }
 .o-cartNav__single.-complete{
     .o-cartNav__title{
-        color: $text-brand-secondary;
+        color: $pink;
     }
     .o-cartNav__number{
         color: $text-white;
-        background: $bg-brand-secondary;
+        /*background: $bg-brand-secondary;*/
+        background-image: url("../img/cart-point-complete.svg");
     }
     &:hover, &:active, &:focus{
         text-decoration: none;

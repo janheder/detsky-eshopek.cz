@@ -1,3 +1,17 @@
+nav.o-headerNav
+	a.o-headerNav__link(href="#") Úvod
+	a.o-headerNav__link(href="#") Aktuality
+	a.o-headerNav__link(href="#") O nás
+	a.o-headerNav__link(href="#") Obchodní podmínky
+	a.o-headerNav__link(href="#") Kontakty
+	.o-headerNav__contact
+		.o-headerNav__contactSingle
+				.a-icon.-phone.o-headerNav__contactIcon
+				.o-headerNav__contactText (+420) 727 877 380, po-pá 8:00 - 16:00
+		.o-headerNav__contactSingle
+				.a-icon.-envelope.o-headerNav__contactIcon
+				.o-headerNav__contactText info@detsky-eshopek.cz
+
 nav.o-navMain
 
 	.o-navMain__navToggler.m-navToggler(id="js-navToggler")
@@ -21,12 +35,12 @@ nav.o-navMain
 		
 	//
 		<a class="o-navMain__user m-navUser" href="#" data-toggle="modal" data-target="#modal-login">
-			<div class="a-icon -user -grey m-navUser__icon"></div>
+			<div class="a-icon -user -blue m-navUser__icon"></div>
 			<div class="m-navUser__info"><span class="m-navUser__title">Přihlášení</span></div>
 		</a>
 
 	.o-navMain__user.m-navUser(data-toggle="collapse" data-target="#collapseNavUser" aria-expanded="false" aria-controls="collapseNavUser")
-		.a-icon.-user.-grey.m-navUser__icon
+		.a-icon.-user.-blue.m-navUser__icon
 		.m-navUser__info
 			span.m-navUser__text Přihlášen jako
 			span.m-navUser__title Petr Novák

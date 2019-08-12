@@ -65,7 +65,7 @@
 }
 .m-productCell__tags{
     position: absolute;
-    top: 10px;
+    top: 0px;
     left: 0px;
     z-index: 1;
 }
@@ -83,7 +83,7 @@
     padding: 0;
     display: flex;
     flex-direction: row;
-    align-items: center;
+    align-items: baseline;
     width: 100%; 
 }
 .m-productCell__price{
@@ -94,6 +94,7 @@
     flex-wrap: wrap;
     padding-right: 10px;
     flex-shrink: 0;
+    align-items: baseline;
 }
 .m-productCell__priceOld{
     text-decoration: line-through;
@@ -105,6 +106,7 @@
     @include f-20-primary-semibold;
     color: $text-red;
     line-height: 1;
+    font-weight: 700;
 }
 .m-productCell__delivery{
     flex-grow: 1;

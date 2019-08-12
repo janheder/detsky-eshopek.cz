@@ -7,16 +7,19 @@
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: flex-start;
     align-items: center;
 }
 .o-copyright__h5{
-    @include f-14-white-regular;
-    flex-grow: 1;
+    @include f-14-primary-semibold;
+    font-weight: 700;
+    /*flex-grow: 1;*/
     margin: 0;
+    padding-right: 20px;
 }
 .o-copyright__link{
-    @include f-14-white-regular;
+    @include f-14-primary-semibold;
+    font-weight: 700;
     opacity: 0.8;
 
     &:hover, &:active, &:focus{
@@ -25,7 +28,8 @@
     }
 }
 .o-copyright__pull{
-    @include f-14-white-regular;
+    @include f-14-primary-semibold;
+    font-weight: 700;
     margin: 0;
 }
 

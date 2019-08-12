@@ -28,6 +28,7 @@
 }
 .o-modal__title{
     @include f-24-primary-semibold;
+    font-weight: 700;
 }
 .modal-header .close{
     padding: 0;

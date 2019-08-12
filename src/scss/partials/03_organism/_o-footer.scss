@@ -105,7 +105,7 @@
 }
 .o-footerMain__title{
     font-size: 2rem;
-    font-weight: 600;
+    font-weight: 700;
     color: $blue;
     margin-bottom: 1rem;
     margin-top: 4rem;
@@ -113,7 +113,15 @@
     position: relative;
     border-bottom: 0px solid rgba(255,255,255,0.1);
 
-
+    &.-pink{
+        color: $pink;
+    }
+    &.-purple{
+        color: $purple;
+    }
+    &.-yellow{
+        color: $yellow;
+    }
 }
 .o-footerMain__link{
     color: $text-primary;
@@ -169,7 +177,7 @@
     height: 68px;
 }
 .o-footer__pointsWrap{
-    margin-top: 8rem;
+    margin: 8rem 0;
     display: flex;
     flex-wrap: wrap;
 }
@@ -197,10 +205,12 @@
     font-size: 1.8rem;
     color: $text-primary;
     padding-left: 2rem;
+    line-height: 1.25;
 }
 .o-footer__pointsTitle{
     font-weight: 700;
 }
 .o-footer__pointsText{
     font-weight: 600;
+    font-size: 1.6rem;
 }

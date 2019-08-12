@@ -19,7 +19,7 @@ input{
 .o-form{
     background: transparent;
     padding: 0px;
-    margin: 20px 0 0 0;
+    margin: 0px 0 0 0;
     border-radius: $border-radius-primary;
 
     &.-noMargin{
@@ -114,9 +114,9 @@ input{
 
 .m-formDivider{
     @include f-14-dark-regular;
-    border-bottom: 1px solid $border-grey;
+    /*border-bottom: 1px solid $border-grey;*/
     margin: 2rem 0;
-    padding-bottom: 5px;
+    padding-bottom: 0px;
 }
 @media screen and (max-width:575px){
     .m-formDivider{
@@ -131,7 +131,8 @@ input{
     border-radius: $border-radius-primary;
 
     &.-radiobutton, &.-checkbox, &.-switch{
-        background: $bg-light;
+        background: transparent;
+        border: 1px dashed $border-medium;
         min-height: 5.4rem;
         display: flex;
         flex-direction: row;
@@ -151,7 +152,7 @@ input{
                 opacity: 1;
             }
             &:checked + .m-formGroup__radiobutton::before{
-                border-color: $border-brand;
+                border-color: $bg-brand;
             }
             &:checked + .m-formGroup__checkbox::before{
                 background: $bg-brand;
@@ -199,7 +200,7 @@ input{
             top: 0;
             left: auto;
             padding-left: 15px;
-            color: $text-brand;
+            color: $text-red;
             z-index: 3;
             cursor: pointer;
             padding-bottom: 0;
@@ -309,7 +310,8 @@ input{
     @include f-16-primary-semibold;
     padding: 0 2rem;
     border: 0;
-    background: $bg-light;
+    background: transparent;
+    border: 1px dashed $border-medium;
     border-radius: $border-radius-primary;
     width: 100%;
 

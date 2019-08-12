@@ -2,6 +2,17 @@
     background: $bg-white;
     position: relative;
     z-index: 4;
+    padding-top: 4px;
+
+    &::after {
+        content: "";
+        background: url(../img/border-stripes.svg);
+        height: 5px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
+    }
 }
 
 
@@ -12,4 +23,41 @@
     .m-navLogo__link{
         justify-content: center;
     }
+}
+
+
+.o-headerNav{
+    background: $bg-light;
+    height: 40px;
+    padding: 0 3rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.o-headerNav__link{
+    margin-right: 30px;
+    color: $text-primary;
+    font-size: 1.4rem;
+    font-weight: 600;
+}
+.o-headerNav__contact{
+    display: flex;
+    flex-grow: 1;
+    justify-content: flex-end;
+    
+}
+.o-headerNav__contactSingle{
+    display: flex;
+    margin-left: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.o-headerNav__contactIcon{
+    height: 16px;
+    width: 16px;
+}
+.o-headerNav__contactText{
+    margin-left: 10px;
 }
