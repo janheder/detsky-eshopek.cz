@@ -68,6 +68,9 @@ background-repeat: repeat-y;
     align-items: center;
     background: transparent;
 
+    &:hover, &:active, &:focus{
+        color: $text-white;
+    }
     &:last-child::after{
         content: none;
     }

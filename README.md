@@ -1,1 +1,1 @@
-# mojespani.cz
+# detsky-eshopek.cz

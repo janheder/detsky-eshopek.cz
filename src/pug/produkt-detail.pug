@@ -72,21 +72,12 @@ html(lang=lang)
                             .m-productDetailMain__description
                                 p.m-productDetailMain__descriptionTitle Popis produktu
                                 p.m-productDetailMain__descriptionText Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi. #[a(href="#anchor-product-detail-description") Celý popis produktu]
-                            
 
-                            .m-productDetailMain__misc
-                                .m-productDetailMain__stock 
-                                    span.a-icon.-box.-green.m-productDetailMain__stockIcon
-                                    span.m-productDetailMain__stockText Dostupné skladem
-
-
-                                .m-productDetailMain__tags
-                                    span.m-productDetailMain__tagSingle Výrobce: Visby
 
 
                             form.m-productDetailMain__form(method="post" name="product_detail_form" id="product_detail_form")
 
-                                .dropdown.m-productDetailMain__sizes.m-selectBox
+                                .dropdown.m-selectBox.m-productDetailMain__sizes
                                     input.m-selectBox__honeypot(type="radio" name="productSize" id="productSizeId" required)
                                     .dropdown-toggle.m-selectBox__dropdown(id="productSizeDrop" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false") 
                                         .m-selectBox__dropdownText Provedení
@@ -100,7 +91,7 @@ html(lang=lang)
                                                 .m-selectBox__price 
                                                     .m-selectBox__priceOld 5 000 Kč
                                                     .m-selectBox__priceNew 2 000 Kč
-                                                .m-selectBox__stock Dostupné skladem
+                                                .m-selectBox__stock Skladem
 
 
                                         - for (var i=0; i<8; i++)
@@ -114,6 +105,17 @@ html(lang=lang)
                                                         .m-selectBox__priceNew 5 000 Kč
                                                     .m-selectBox__stock 21 dní
 
+
+                            
+
+                                .m-productDetailMain__misc
+                                    .m-productDetailMain__stock 
+                                        span.a-icon.-box.-green.m-productDetailMain__stockIcon
+                                        span.m-productDetailMain__stockText Dostupné skladem
+
+
+                                    .m-productDetailMain__tags
+                                        span.m-productDetailMain__tagSingle Výrobce: Visby
 
 
                                 .m-productDetailMain__priceWrap

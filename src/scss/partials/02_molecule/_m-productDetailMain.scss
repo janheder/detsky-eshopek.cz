@@ -5,11 +5,10 @@
     text-align: left;
     line-height: 1.25;
     margin-bottom: 2rem;
-    padding-bottom: 2rem;
+    padding-bottom: 0rem;
 
     &::after{
-        transform: none;
-        left: 0;
+        content: none;
     }
 }
 .m-productDetailMain__misc{
@@ -52,6 +51,7 @@
 
 .m-productDetailMain__sizes{
     margin-top: 4rem;
+    background: transparent;
 }
 
 .m-productDetailMain__variations{
