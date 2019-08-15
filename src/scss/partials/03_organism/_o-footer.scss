@@ -103,6 +103,20 @@
 .o-footerMain{
     padding-top: 2rem;
 }
+.o-footerMain__container{
+    position: relative;
+
+    &::after{
+        content: "";
+        border-left: 1px dashed $border-primary;
+        top: 40px;
+        bottom: 0;
+        width: 1px;
+        position: absolute;
+        left: 47%;
+        opacity: 0.4;
+    }
+}
 .o-footerMain__title{
     font-size: 2rem;
     font-weight: 700;
@@ -145,8 +159,23 @@
     line-height: 3.6rem;
     margin: 0;
 }
-@media screen and (max-width:768px){
+@media screen and (max-width:991px){
+    .o-footerMain__container{
 
+    
+        &::after{
+            content: none;
+        }
+    }
+    .o-footerMain__row .col-12:first-child{
+        order: 2;
+    }
+    .o-footer__logoLink{
+        margin: 0;
+    }
+    .o-footer__logo{
+        display: none;
+    }
 }
 
 @media screen and (max-width:500px){

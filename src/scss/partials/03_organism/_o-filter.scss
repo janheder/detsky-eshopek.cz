@@ -36,7 +36,7 @@
     display: flex;
     flex-direction: row;
     position: relative;
-    background: $bg-light;
+    background: rgba(231, 108, 176, 0.2);
 
     &::after{
         content: "";

@@ -4,11 +4,20 @@
 .m-productDetailMain__title{
     text-align: left;
     line-height: 1.25;
-    margin-bottom: 2rem;
-    padding-bottom: 0rem;
-
+    margin-bottom: 1rem;
+    padding-bottom: 3rem;
+    color: $purple;
     &::after{
         content: none;
+    }
+    &::before {
+        content: "";
+        background: url(../img/border-stripes.svg);
+        height: 5px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        bottom: 0;
     }
 }
 .m-productDetailMain__misc{
@@ -65,9 +74,9 @@
     margin-top: 4rem;
 }
 .m-productDetailMain__cta{
-    background: transparent;
+    background: rgba(231, 108, 176, 0.2);
     border-radius: $border-radius-primary;
-    padding: 0;
+    padding: 2rem;
     display: flex;
     flex-direction: row;
     justify-content: flex-start;
@@ -91,10 +100,15 @@
 }
 .m-productDetailMain__qty{
     padding-right: 2rem;
+    .m-numberStepper{
+        background: $bg-white;
+    }
 }
 .m-productDetailMain__button{
     padding: 0 6rem;
-    
+    background: $pink;
+    flex-grow: 1;
+
     .m-productDetailMain__icon{
         height: 22px;
         width: 22px;

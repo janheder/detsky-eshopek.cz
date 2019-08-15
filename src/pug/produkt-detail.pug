@@ -61,6 +61,10 @@ html(lang=lang)
                                                     .swiper-lazy-preloader.m-productDetailThumbs__preloader
                                                 figcaption.m-productDetailThumbs__figcaption(itemprop="caption description") Popis obrázku 1
 
+                        .m-productDetailMain__info
+                            span.m-productDetailMain__id Katalogové číslo: Angeli160
+                            span.m-productDetailMain__id Záruka: 24 měsíců
+
 
                     .col-12.col-lg-5.o-productDetail__col
                         .o-productDetail__main.m-productDetailMain
@@ -87,6 +91,7 @@ html(lang=lang)
                                         label.m-selectBox__label
                                             input.m-selectBox__input(type="radio" name="productSize" id="productSizeId" required checked)
                                             .m-selectBox__content
+                                                img.m-selectBox__img(src=URLbase+"img/product-thumb-small.jpg")
                                                 .m-selectBox__name medium
                                                 .m-selectBox__price 
                                                     .m-selectBox__priceOld 5 000 Kč
@@ -99,6 +104,7 @@ html(lang=lang)
                                             label.m-selectBox__label
                                                 input.m-selectBox__input(type="radio" name="productSize" id="productSizeId" required)
                                                 .m-selectBox__content
+                                                    img.m-selectBox__img(src=URLbase+"img/product-thumb-small.jpg")
                                                     .m-selectBox__name largo
                                                     .m-selectBox__price 
                                                         .m-selectBox__priceOld 9 000 Kč
@@ -136,9 +142,7 @@ html(lang=lang)
 
                                     button.btn.m-productDetailMain__button(type="submit" name="buy-button") #[span.a-icon.-cart.-white.m-productDetailMain__icon] Do košíku
 
-                                .m-productDetailMain__info
-                                    span.m-productDetailMain__id Katalogové číslo: Angeli160
-                                    span.m-productDetailMain__id Záruka: 24 měsíců
+
 
         section.o-productDetailVariants
             .container
@@ -158,19 +162,74 @@ html(lang=lang)
                         .o-productDetailVariants__text.-price 426 Kč
                         a.o-productDetailVariants__text.-link(href="#") Detail produktu #[span.a-icon.-cheveron.o-productDetailVariants__icon]
 
-        section.o-productDescription(id="anchor-product-detail-description")
-            .container  
-                p
-                    strong Popis
-                p Hydrance Optimale Riche je výživný hydratační krém, který je určen pro suchou až velmi suchou dehydratovanou citlivou pleť. Přináší okamžitou a intenzivní hydrataci pleti, která má dlouhotrvající účinek. Krém má vláčnou texturu, která dodává pleti pocit pohodlí. Díky unikátnímu složení se snižuje možnost vzniku alergií. Krém je vhodný jako podklad pod make-up.
 
-                p
-                    strong Dávkování a způsob užití
-                p Aplikujte krém ráno, anebo večer na dokonale čistou a osušenou pleť.
 
-                p
-                    strong Složení
-                p Přípravek obsahuje termální vodu Avene, bambucké máslo, meiboserin, lipomucin.
+
+
+
+
+        section.o-sectionProducts.o-tabs
+
+            nav.o-tabs__nav.m-tabsNav
+                .container  
+                    .nav.nav-tabs.m-tabsNav__nav(role="tablist")
+                
+                        a.m-tabsNav__link.active(id="index-1-tab" data-toggle="tab" href="#index-1" role="tab" aria-controls="index-1" aria-selected="true") Popis produktu
+                
+                        a.m-tabsNav__link(id="index-2-tab" data-toggle="tab" href="#index-2" role="tab" aria-controls="index-2" aria-selected="false") Příslušenství
+    
+
+            .tab-content.o-tabs__content.m-tabsContent
+
+                .tab-pane.fade.m-tabsContent__pane.show.active(id="index-1" role="tabpanel" aria-labelledby="index-1-tab")  
+                    .m-tabsContent__collapseToggle(data-toggle="collapse" data-target="#collapseIndexTab-1" aria-expanded="false" aria-controls="#collapseIndexTab-1") Popis produktu
+                    .collapse.m-tabsContent__collapse.show(id="collapseIndexTab-1" aria-labelledby="collapseIndexTab-1")
+                 
+                        section.o-productDescription(id="anchor-product-detail-description")
+                            .container  
+                                p
+                                    strong Popis
+                                p Hydrance Optimale Riche je výživný hydratační krém, který je určen pro suchou až velmi suchou dehydratovanou citlivou pleť. Přináší okamžitou a intenzivní hydrataci pleti, která má dlouhotrvající účinek. Krém má vláčnou texturu, která dodává pleti pocit pohodlí. Díky unikátnímu složení se snižuje možnost vzniku alergií. Krém je vhodný jako podklad pod make-up.
+
+                                p
+                                    strong Dávkování a způsob užití
+                                p Aplikujte krém ráno, anebo večer na dokonale čistou a osušenou pleť.
+
+                                p
+                                    strong Složení
+                                p Přípravek obsahuje termální vodu Avene, bambucké máslo, meiboserin, lipomucin.
+
+
+                .tab-pane.fade.m-tabsContent__pane(id="index-2" role="tabpanel" aria-labelledby="index-2-tab")    
+                    .m-tabsContent__collapseToggle(data-toggle="collapse" data-target="#collapseIndexTab-2" aria-expanded="false" aria-controls="#collapseIndexTab-2") Příslušenství
+                    .collapse.m-tabsContent__collapse(id="collapseIndexTab-2" aria-labelledby="collapseIndexTab-2")
+                        .container  
+                            .o-sectionSale.m-productCarousel
+                                .m-productCarousel__content
+                                    .swiper-wrapper.m-productCarousel__wrap
+
+                                        .swiper-slide.m-productCarousel__slide
+                                            include partials/_single-product-cell.pug
+                                        .swiper-slide.m-productCarousel__slide
+                                            include partials/_single-product-cell.pug
+                                        .swiper-slide.m-productCarousel__slide
+                                            include partials/_single-product-cell.pug
+                                        .swiper-slide.m-productCarousel__slide
+                                            include partials/_single-product-cell.pug
+                                        .swiper-slide.m-productCarousel__slide
+                                            include partials/_single-product-cell.pug
+                                    
+                                .swiper-button-prev.m-productCarousel__swiperButton.-prev
+                                .swiper-button-next.m-productCarousel__swiperButton.-next
+
+
+
+
+
+
+
+
+
 
 
 

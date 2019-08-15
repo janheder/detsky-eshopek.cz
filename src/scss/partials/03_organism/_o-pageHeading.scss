@@ -1,7 +1,10 @@
 .o-pageHeading{
-    background: $bg-light;;
-    padding: 9rem 0;
+    background: $bg-light;
+    background-image: url(../img/bg-news.png);
+    padding: 6rem 0 5rem 0;
     position: relative;
+    max-width: 1900px;
+    margin: 10px auto 0 auto;
 
     &.-news{
         padding-bottom: 0;

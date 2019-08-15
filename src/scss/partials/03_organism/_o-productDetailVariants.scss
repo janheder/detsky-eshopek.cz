@@ -1,6 +1,8 @@
 .o-productDetailVariants{
     background: $bg-white;
     padding: 4rem 0;
+    position: relative;
+
 }
 .o-productDetailVariants__title{
     font-size: 2.4rem;
@@ -10,6 +12,7 @@
     padding-bottom: 1rem;
     text-align: center;
     position: relative;
+    padding-top: 4rem;
 
     &::after{
         content: "";
@@ -19,6 +22,15 @@
         transform: translateX(-50%);
         width: 90px;
         border: 1px $bg-brand dashed;
+    }
+    &::before {
+        content: "";
+        background: url(../img/border-stripes.svg);
+        height: 5px;
+        width: 100%;
+        position: absolute;
+        left: 0;
+        top: 0;
     }
 }
 .o-productDetailVariants__heading{
