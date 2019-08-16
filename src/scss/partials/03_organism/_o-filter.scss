@@ -65,16 +65,9 @@
     position: relative;
 
     &[aria-expanded="true"]{
-        &::after{
-            content: "";
-            background: $bg-brand;
-            height: 1px;
-            width: 100%;
-            bottom: 0;
-            left: 0;
-            position: absolute;
-            z-index: 2;
-        }
+        background: $pink;
+        color: $text-primary;
+
         .o-filter__icon{
             transform: rotate(-90deg); 
         }

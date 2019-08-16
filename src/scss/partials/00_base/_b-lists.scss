@@ -7,9 +7,8 @@ li{
     &::before{
         content: "";
         left: 0;
-        top: 50%;
+        top: 15px;
         position: absolute;
-        transform: translateY(-50%);
         height: 10px;
         width: 10px;
         background: $bg-brand;
