@@ -12,7 +12,7 @@ var postcss = require('gulp-postcss');
 var autoprefixer= require('autoprefixer');
 var changed = require('gulp-changed');
 var sassGlob = require('gulp-sass-glob');
-
+var uncss = require('gulp-uncss');
 
 // COMPILE SASS
 gulp.task('sass', function () {

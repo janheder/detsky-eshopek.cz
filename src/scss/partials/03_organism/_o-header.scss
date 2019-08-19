@@ -13,18 +13,16 @@
         left: 0;
         top: 0;
     }
+
 }
 
-
-.o-header.-cart{
-    & .m-navToggler, & .m-navSearchToggler{
-        display: none;
-    }
-    .m-navLogo__link{
-        justify-content: center;
+@media screen and (min-width: 992px){
+    .o-header.-cart{
+        .o-navProducts{
+            display: none;
+        }
     }
 }
-
 
 .o-headerNav{
     background: $bg-light;
@@ -62,4 +60,10 @@
 }
 .o-headerNav__contactText{
     margin-left: 10px;
+}
+
+@media screen and (max-width: 991px){
+    .o-headerNav{
+        display: none;
+    }
 }

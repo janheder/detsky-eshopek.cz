@@ -44,7 +44,7 @@
     &:hover, &:active, &:focus{
         color: $text-white;
         box-shadow: none;
-        background: $brand-primary--dark;
+        background: $bg-brand-dark;
     }
 }
 @media screen and (max-width: 600px){

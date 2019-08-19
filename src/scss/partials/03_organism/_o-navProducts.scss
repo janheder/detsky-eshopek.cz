@@ -38,9 +38,9 @@
         width: 0;
         width: 1px;
         background-image: linear-gradient(rgba(255,255,255,0.3) 50%, transparent 0%);
-background-position: right;
-background-size: 1px 5px;
-background-repeat: repeat-y;
+        background-position: right;
+        background-size: 1px 5px;
+        background-repeat: repeat-y;
     }
     &[aria-expanded="true"]{
         color: $text-brand;
@@ -70,6 +70,7 @@ background-repeat: repeat-y;
 
     &:hover, &:active, &:focus{
         color: $text-white;
+        background: rgba(255,255,255,0.1);
     }
     &:last-child::after{
         content: none;
@@ -166,6 +167,8 @@ background-repeat: repeat-y;
         height: 100%;
         flex-direction: column;
         overflow-y: auto;
+        background: $bg-white;
+        padding: 0;
         background: $bg-white;
     }
     .o-navProducts.-active{

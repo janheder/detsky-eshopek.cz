@@ -6,9 +6,9 @@
     left: 0;
     width: 100%;
     background: $bg-white;
-    z-index: 4;
+    z-index: 3;
     padding: 5px 10px;
-    box-shadow: $box-shadow-primary;
+    box-shadow: 1px -4px 8px 0px rgba(0,0,0,0.05);;
 }
 .m-cartBarResponsive__priceWrap{
     flex-grow: 1;
