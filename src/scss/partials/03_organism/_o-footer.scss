@@ -246,4 +246,17 @@
             padding-bottom: 20px;
         }
     }
+    .o-footer__pointsWrap{
+        margin-top: 2rem;
+    }
+    .o-footer__pointsSingle{
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+    }
+    .o-footer__pointsContent{
+        padding-left: 0;
+        text-align: center;
+        padding-top: 10px;
+    }
 }

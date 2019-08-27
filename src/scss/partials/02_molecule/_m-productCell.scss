@@ -72,6 +72,22 @@
 .m-productCell__tagSingle{
     display: block;
 }
+.m-productCell__tagSingle.--circle{
+    position: absolute;
+    right: 0;
+    top: 0;
+    border-radius: 50%;
+    height: 40px;
+    width: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: $red;
+    z-index: 2;
+    color: $text-white;
+    font-size: 1.3rem;
+    font-weight: 700;
+}
 .m-productCell__bottom{
     width:100%;
 }
@@ -157,6 +173,9 @@
 @media screen and (max-width:500px){
      .m-productCell{
         padding: 0px;
+    }
+    .m-productCell__link{
+        padding: 10px;
     }
 }
 

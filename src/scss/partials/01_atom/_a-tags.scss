@@ -23,3 +23,11 @@
 .a-tag.-top{
     background: $bg-blue;
 }
+
+@media screen and (max-width: 991px){
+    .a-tag{
+        height: 20px;
+        padding: 0 5px;
+        margin-bottom: 3px;
+    }
+}

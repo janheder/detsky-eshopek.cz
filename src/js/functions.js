@@ -131,7 +131,7 @@ var carousel_main = new Swiper('.m-heroCarousel__content', {
   },
   navigation: {
       nextEl: '.o-hero__swiperButton.-next',
-      prevEl: 'o-hero__swiperButton.-prev',
+      prevEl: '.o-hero__swiperButton.-prev',
   },
 });
 
