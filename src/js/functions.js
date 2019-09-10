@@ -349,7 +349,7 @@ $(function () {
 // =============================================================================
 // SELECTBOX 
 // =============================================================================
-
+$(document).ready(function() {
 if($(".m-selectBox .m-selectBox__input:checked")){ 
     var value = $(".m-selectBox .m-selectBox__input:checked").siblings(".m-selectBox__content").find(".m-selectBox__name").text();
 
@@ -387,10 +387,10 @@ $(".m-selectBox .m-selectBox__input").click(function () {
 
     $(".m-selectBox .m-selectBox__dropdownText").text("Vybráno: " + value);
     var vybrano = $(".m-selectBox__input:checked + .m-selectBox__content .m-selectBox__img").attr("src").split("/img_produkty/male/").pop();
-    $(".swiper-slide-active .m-productDetailCarousel__link").attr("href", "/img_produkty/velke/" + vybrano);
-    $(".swiper-slide-active .m-productDetailCarousel__img").attr("src", "/img_produkty/velke/" + vybrano);
+    $(".swiper-slide-active .m-productDetailCarousel__link").attr("href", "https://www.mojespani.cz/img_produkty/nejvetsi/" + vybrano);
+    $(".swiper-slide-active .m-productDetailCarousel__img").attr("src", "https://www.mojespani.cz/img_produkty/nejvetsi/" + vybrano);
 });
-
+});
 
 // =============================================================================
 // CART
