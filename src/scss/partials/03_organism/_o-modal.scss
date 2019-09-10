@@ -25,6 +25,10 @@
     background: $bg-light;
     border-top-left-radius: $border-radius-primary;
     border-top-right-radius: $border-radius-primary;
+
+    &.-img{
+        background: $bg-white;
+    }
 }
 .o-modal__title{
     @include f-24-primary-semibold;
